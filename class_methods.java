@@ -61,3 +61,42 @@ class rectangle
         }
     }
 }
+//without parameter
+
+public class Main
+{
+	public static void main(String[] args) {
+		rectangle r1=new rectangle();
+		r1.len=10;
+		r1.brea=20;
+		r1.area();
+		r1.perimeter();
+		System.out.println(r1.issquare());
+	}
+}
+class rectangle
+{
+    int len,brea;
+    int area,perimeter;
+    public void area()
+    {
+        area=len*brea;
+        System.out.println(area);
+    }
+    public void perimeter()
+    {
+        perimeter=2*len+2*brea;
+        System.out.println(perimeter);
+    }
+    public boolean issquare()
+    {
+        if(len==brea)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+}
