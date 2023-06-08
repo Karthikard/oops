@@ -1,3 +1,5 @@
+//Inheritance : Process of acquiring features from existing class to new class.
+
 public class Main
 {
 	public static void main(String[] args) {
@@ -35,3 +37,8 @@ class cylinder extends circle
     }
     
 }
+/* OUTPUT 
+Volume = 785.0
+Area = 78.5
+Perimeter = 31.400000000
+*/
