@@ -150,3 +150,50 @@ class two extends one
 	10 20
 */
 
+class Main
+{
+	public static void main(String[] args) {
+		cuboild c1=new cuboild();
+		System.out.println(c1.volume()); // output : 1
+		
+		cuboild c2=new cuboild(10);
+		System.out.println(c2.volume()); // output : 10
+		
+		cuboild c3=new cuboild(10,12,15);
+		System.out.println(c3.volume()); //output : 1800
+	}
+}
+class rectangle
+{
+    int len,brea;
+    public rectangle()
+    {
+        len=brea=1;
+    }
+    public rectangle(int n1,int n2)
+    {
+        len=n1;
+        brea=n2;
+    }
+}
+class cuboild extends rectangle
+{
+    int height;
+    public cuboild()
+    {
+        height=1;
+    }
+    public cuboild(int h)
+    {
+        height=h;
+    }
+    public cuboild(int l,int b,int h)
+    {
+        super(l,b);
+        height=h;
+    }
+    int volume()
+    {
+        return len*brea*height;
+    }
+}
