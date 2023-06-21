@@ -73,3 +73,80 @@ class two extends one
 	one
 	two
  */
+
+//parameterized constructor in inheritance
+
+class Main
+{
+	public static void main(String[] args) {
+		two n2=new two(20);	
+	}
+}
+class one 
+{
+    public one()
+    {
+        System.out.println("One");
+    }
+    public one(int n)
+    {
+        System.out.println("Parameterized one");
+    }
+}
+class two extends one
+{
+    public two()
+    {
+        System.out.println("Two");
+    }
+    public two(int n)
+    {
+        System.out.println("Parameterized two");
+    }
+}
+/* output
+	One
+	Parameterized two
+*/
+
+// super 
+
+class Main
+{
+	public static void main(String[] args) {
+		two n2=new two(10,20);
+		
+	}
+}
+class one 
+{
+    public one()
+    {
+        System.out.println("One");
+    }
+    public one(int n)
+    {
+        System.out.println("Parameterized one "+n);
+    }
+}
+class two extends one
+{
+    public two()
+    {
+        System.out.println("Two");
+    }
+    public two(int n)
+    {
+        System.out.println("Parameterized two "+ n);
+    }
+    public two(int x,int y)
+    {
+        super(x);
+        System.out.println(x+" "+y);
+    }
+}
+/* output
+	Parameterized one 10
+	10 20
+*/
+
