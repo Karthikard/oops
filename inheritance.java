@@ -42,3 +42,34 @@ Volume = 785.0
 Area = 78.5
 Perimeter = 31.400000000
 */
+
+
+//inheritance and constructor
+
+class Main
+{
+	public static void main(String[] args) {
+		one n1=new one (); // output:one
+		two n2=new two(); // output:one two
+	}
+}
+class one 
+{
+    public one()
+    {
+        System.out.println("One");
+    }
+}
+class two extends one
+{
+    public two()
+    {
+        System.out.println("Two");
+
+    }
+}
+/* output
+	one 
+	one
+	two
+ */
