@@ -1,0 +1,26 @@
+// The method will be called depending on the object not reference
+
+public class Main
+{
+	public static void main(String[] args) {
+		supers c1=new child();     // super: reference   :: child : object
+		c1.display();
+	}
+}
+class supers
+{
+    public void display()
+    {
+        System.out.println("super hello");
+    }
+}
+class child extends supers
+{
+    public void display()
+    {
+        System.out.println("Child display");
+    }
+}
+ /* output
+ Child display
+*/
