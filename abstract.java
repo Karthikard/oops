@@ -6,7 +6,7 @@
 
 abstract class main1
 {
-  abstract void num(){};
+  abstract void num();
 }
 class main2 extands main1
 {
