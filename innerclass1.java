@@ -28,9 +28,11 @@ class outer
     {
         inner i=new inner();
         i.innerdisplay();
+        System.out.println(i.y);
         
     }
 }
 /* output
   10  20
+  20
 */
