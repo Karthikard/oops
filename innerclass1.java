@@ -11,11 +11,15 @@ class Main
     public static void main (String[] args) {
        outer o=new outer();
        o.outerdisplay();
+       
+       outer.inner oi=new outer().new inner();
+       oi.innerdisplay();
     }
 }
 class outer 
 {
     int x=10;
+    
     class inner 
     {
         int y=20;
@@ -32,7 +36,9 @@ class outer
         
     }
 }
+
 /* output
   10  20
   20
+  10 20
 */
